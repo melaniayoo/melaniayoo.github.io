@@ -1,9 +1,9 @@
 // next.config.js
-module.exports = {
-  output: 'export',
-  experimental: {
-    fontLoaders: [
-      { loader: '@next/font/google', options: { subsets: ['latin'] } },
-    ],
-  },
+
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  output: "export",
+  trailingSlash: true,
 };
+
+module.exports = nextConfig;
