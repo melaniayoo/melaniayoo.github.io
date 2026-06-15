@@ -1,15 +1,16 @@
 /* src/styles/globals.css */
 :root {
-  --primary-color: #FFEFB3;  /* Lemon */
-  --secondary-color: #1D3557; /* Navy */
-  --background-color: #FDFDF9; /* Warm off-white */
-  --text-color: #1E293B;  /* Deep slate navy */
-  --light-text: #94A3B8;  /* Slate gray */
-  --border-color: #E2E8F0; /* Light gray border */
+  --primary-color: #1D3557;      /* Main navy */
+  --secondary-color: #0F172A;    /* Deep navy / almost black */
+  --background-color: #F8FAFC;   /* Clean light gray */
+  --text-color: #1E293B;         /* Slate text */
+  --light-text: #64748B;         /* Muted slate */
+  --border-color: #E2E8F0;       /* Light gray border */
+
   --transition: all 0.3s ease;
   --border-radius: 8px;
-  --shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-  --shadow-hover: 0 10px 25px rgba(0, 0, 0, 0.1);
+  --shadow: 0 4px 20px rgba(15, 23, 42, 0.06);
+  --shadow-hover: 0 10px 25px rgba(15, 23, 42, 0.1);
 }
 
 * {
@@ -50,31 +51,34 @@ a {
   display: inline-block;
   padding: 0.8rem 2rem;
   background-color: var(--primary-color);
-  color: var(--secondary-color);
-  border: none;
+  color: white;
+  border: 1px solid var(--primary-color);
   border-radius: var(--border-radius);
   font-weight: 600;
   transition: var(--transition);
   cursor: pointer;
-  box-shadow: 0 4px 14px rgba(253, 224, 71, 0.4);
+  box-shadow: 0 4px 14px rgba(15, 23, 42, 0.12);
   text-decoration: none;
 }
 
 .btn:hover {
   transform: translateY(-3px);
-  box-shadow: 0 10px 25px rgba(253, 224, 71, 0.4);
+  background-color: #0F172A;
+  border-color: #0F172A;
+  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.16);
 }
 
 .btn-outline {
   background: transparent;
-  border: 2px solid var(--primary-color);
-  color: var(--secondary-color);
+  border: 1.5px solid var(--primary-color);
+  color: var(--primary-color);
   box-shadow: none;
   margin-left: 1rem;
 }
 
 .btn-outline:hover {
   background: var(--primary-color);
+  color: white;
 }
 
 /* Card styles */
@@ -123,7 +127,7 @@ nav {
 }
 
 .logo span {
-  color: var(--primary-color);
+  color: var(--light-text);
 }
 
 .nav-links {
@@ -283,36 +287,37 @@ footer {
 }
 
 .highlight-item i {
-  color: var(--primary-color);
+  color: var(--light-text);
   margin-top: 0.2rem;
   flex-shrink: 0;
 }
 
 .manual-highlight {
-  background: #FFF7AD; /* soft lemon butter */
+  background: #E2E8F0; 
+  color: #0F172A;
   padding: 2px 6px;
   border-radius: 6px;
   font-weight: 600;
 }
 
 .manual-highlight:hover {
-  background: #FFEE58; /* slightly darker lemon on hover */
+  background: #CBD5E1; 
   text-decoration: none; /* ensure no underline on hover */
 }
 
 /* Add this to your global CSS */
 .internal-link {
-  background-color: #FFF7AD !important;
+  background-color: #E2E8F0 !important;
   padding: 2px 6px !important;
   border-radius: 6px !important;
   font-weight: 600 !important;
   text-decoration: none !important;
-  color: #1a1a1a !important;
-  border: 1px solid rgba(255, 247, 173, 0.5) !important;
+  color: #0F172A !important;
+  border: 1px solid #CBD5E1 !important;
 }
 
 .internal-link:hover {
-  background-color: #FFEE58 !important;
+  background-color: #CBD5E1 !important;
   text-decoration: none !important;
 }
 
