@@ -6,7 +6,7 @@ export default function Document() {
     <Html>
       <Head>
         {/* Add cache-busting parameter */}
-        <link rel="icon" href="/favicon.ico?v=2" />
+        <link rel="icon" href="/bulb.png?v=1" type="image/png" />
         
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
