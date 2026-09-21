@@ -10,6 +10,13 @@ export default function Projects() {
 
   const projects = [
     {
+      title: "Two-Stage Op-Amp",
+      description: "Design and Simulation of a Two-Stage Operational Amplifier for Improved Performance",
+      tags: ["Electronics", "Circuit Design", "SPICE Simulation", "Analog Design"],
+      icon: "fa-solid fa-microchip",
+      link: "/projects/two-stage-op-amp"
+    },
+    {
       title: "Drone RL Control",
       description: "Simulation & Control of a Drone using Reinforcement Learning Techniques in a ROS2 Environment",
       tags: ["ROS2", "Reinforcement Learning", "Gazebo", "OpenAI Gymnasium", "Stable Baselines3"],
