@@ -6,6 +6,29 @@ import Link from 'next/link';
 
 // Projects data - you can move this to a separate file later
 const projectsData = {
+    "Two-Stage Op-Amp": {
+    title: "Two-Stage Op-Amp",
+    description: "Design and Analysis of a Two-Stage Operational Amplifier",
+    longDescription: `The Two-Stage Op-Amp project involves the design and analysis of a two-stage operational amplifier, a fundamental building block in analog circuit design. This project explores the principles of differential amplification, frequency response, and stability analysis. The amplifier is designed to achieve high gain, wide bandwidth, and low noise performance, making it suitable for various analog signal processing applications.`,
+    tags: ["Electronics", "Circuit Design", "Analog", "SPICE", "Multisim"],
+    icon: "fas fa-microchip",
+    features: [
+      "High Gain Design: Achieves high open-loop gain for precise signal amplification",
+      "Wide Bandwidth: Supports a broad frequency range for versatile applications",
+      "Low Noise Performance: Minimizes noise to ensure clean signal output"
+    ],
+    images: [
+      {
+        src: "/images/two-stage-op-amp/circuit_diagram.png",
+        caption: "Circuit Diagram of the Two-Stage Op-Amp"
+      },
+      {
+        src: "/images/two-stage-op-amp/simulation_results.png",
+        caption: "Simulation Results of the Two-Stage Op-Amp"
+      }
+    ],
+    date: "August 2026"
+  },
   "drone-rl-control": {
     title: "Drone RL Control",
     description: "Simulation & Control of a Drone using Reinforcement Learning Techniques in a ROS2 Environment",
